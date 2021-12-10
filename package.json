@@ -7,6 +7,11 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Omar-Muhamad/Testing-Practice.git"
@@ -19,6 +24,9 @@
   },
   "homepage": "https://github.com/Omar-Muhamad/Testing-Practice#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.4",
     "jest": "^27.4.4"
   }
 }
